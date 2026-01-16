@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 Added some data to check the fetch command
 This is a test commit
-checking stash 
+checking stashed data
 and still confused why I am testing it 🤦‍♂️
 testing mail
-=======
 hi how are you ?
->>>>>>> 08d6e07 (Update amend.txt)
