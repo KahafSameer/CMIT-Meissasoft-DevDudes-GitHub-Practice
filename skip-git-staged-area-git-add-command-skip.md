@@ -76,6 +76,3 @@ Agar chaho, mai tumhare liye **“full Git cheat sheet”** ready bana doon jism
 * Skip Staging
 * Branching + Merge + Deploy
 
-Sab ek **copy-paste practice sheet** me ho, beginners ke liye perfect.
-
-Chahoge mai wo bana doon?
