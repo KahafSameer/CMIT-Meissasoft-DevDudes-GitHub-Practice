@@ -245,6 +245,112 @@
                     <p>Git stash temporarily saves uncommitted changes. Use it when you need to switch branches or pull
                         changes without committing incomplete work, then apply with 'git stash pop'.</p>
                     <h2>End of Interview Questions</h2>
+                    <h1>More Interview Questions & Answers related to git</h1>
+
+<h2>1. Git stash drop?</h2>
+<p><strong>Answer:</strong> Drop the most recent stash. The <code>git stash drop</code> command is used to remove a particular stash.</p>
+<p>If there’s a stash you're no longer using, you can remove it using:</p>
+<p><code>git stash drop stash@{abc}</code></p>
+
+<h2>2. Git pull vs fetch?</h2>
+<p><strong>Answer:</strong> <strong>Git Fetch</strong> checks for changes in the remote repository without merging them.</p>
+<p><strong>Git Pull</strong> fetches and merges the changes into the local repository.</p>
+<p>
+    Reference:
+    <a href="https://www.geeksforgeeks.org/git-difference-between-git-fetch-and-git-pull/" target="_blank">
+        GeeksforGeeks
+    </a>
+</p>
+
+<h2>3. What do you understand by the term ‘Version Control System’?</h2>
+<p><strong>Answer:</strong> A Version Control System (VCS) records all changes made to files so previous versions can be retrieved if needed. It ensures team members work on the latest version.</p>
+
+<h2>4. What benefits come with using GIT?</h2>
+<ul>
+    <li>Data replication and redundancy</li>
+    <li>High availability</li>
+    <li>Single Git directory per repository</li>
+    <li>Excellent network and disk performance</li>
+    <li>Easy collaboration</li>
+</ul>
+
+<h2>5. What language is used in Git?</h2>
+<p><strong>Answer:</strong> Git is written in <strong>C</strong>, which reduces runtime overhead.</p>
+
+<h2>6. How is Git different from Subversion (SVN)?</h2>
+<p>
+    Reference:
+    <a href="https://www.perforce.com/blog/vcs/git-vs-svn-what-difference" target="_blank">
+        Git vs SVN
+    </a>
+</p>
+
+<h2>7. Which command is used to create an empty Git repository?</h2>
+<p><strong>Answer:</strong> <code>git init</code> – creates an empty repository.</p>
+
+<h2>8. What does git pull origin master do?</h2>
+<p><strong>Answer:</strong> Fetches changes from the master branch on the origin and merges them into the local branch.</p>
+
+<h2>9. How do you resolve conflicts in Git?</h2>
+<ul>
+    <li>Identify conflicted files</li>
+    <li>Edit and resolve conflicts</li>
+    <li>Add files using <code>git add</code></li>
+    <li>Commit changes using <code>git commit</code></li>
+</ul>
+
+<h2>10. How do you revert a pushed commit?</h2>
+<p><strong>Answer:</strong></p>
+<ul>
+    <li>Create a new commit with fixes and push it</li>
+    <li>Use <code>git revert &lt;commit-id&gt;</code></li>
+</ul>
+
+<h2>11. How do you list files changed in a commit?</h2>
+<p><strong>Answer:</strong></p>
+<p><code>git diff-tree -r &lt;commit-hash&gt;</code></p>
+
+<h2>12. What is SubGit and why is it used?</h2>
+<p><strong>Answer:</strong> SubGit is used to migrate SVN repositories to Git while syncing both systems.</p>
+
+<h2>13. If you recover a deleted branch, what work is restored?</h2>
+<p><strong>Answer:</strong> Stashed and committed files are restored. Untracked files are lost.</p>
+
+<h2>14. Explain these commands</h2>
+<ul>
+    <li><strong>git status:</strong> Shows working directory and staging status</li>
+    <li><strong>git log:</strong> Displays commit history</li>
+    <li><strong>git diff:</strong> Shows differences</li>
+    <li><strong>git revert &lt;commit&gt;:</strong> Undoes a commit</li>
+    <li><strong>git reset &lt;file&gt;:</strong> Unstages a file</li>
+</ul>
+
+<h2>15. What do you mean by branching strategy?</h2>
+<p><strong>Answer:</strong> A method used by teams to manage code changes using branches.</p>
+
+<h2>16. What exactly is the forking workflow?</h2>
+<p><strong>Answer:</strong> Forking creates a server-side copy of a repository for independent development.</p>
+
+<h2>17. Difference between git remote and git clone?</h2>
+<p><strong>Answer:</strong></p>
+<ul>
+    <li><strong>git remote:</strong> Adds a repository URL reference</li>
+    <li><strong>git clone:</strong> Copies a repository locally</li>
+</ul>
+
+<h2>18. How do you recover a deleted branch?</h2>
+<p><strong>Answer:</strong> Use <code>git reflog</code> to find the commit and recreate the branch.</p>
+
+<h2>19. What is Git reflog?</h2>
+<p><strong>Answer:</strong> A log of all reference updates, useful for recovery and debugging.</p>
+
+<h2>20. What is a detached HEAD and how to avoid it?</h2>
+<p><strong>Answer:</strong> A detached HEAD occurs when HEAD points to a commit instead of a branch.</p>
+<ul>
+    <li>Commit changes before switching branches</li>
+    <li>Use <code>git checkout -b &lt;branch-name&gt;</code></li>
+</ul>
+
                 </div>
             </div>
         </section>
