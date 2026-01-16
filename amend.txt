@@ -1,6 +1,8 @@
+hi how are you ?
+
 Added some data to check the fetch command
 This is a test commit
-checking stashed data
+checking stash 
 and still confused why I am testing it 🤦‍♂️
 testing mail
 hi how are you ?
