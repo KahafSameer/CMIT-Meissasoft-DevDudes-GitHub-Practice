@@ -190,6 +190,4 @@ git push origin main
 ---
 
 Kafi 💪
-Agar chaho, mai ye notes **Vite / React static deployment ke liye bhi ready-to-use add kar doon**, taki same workflow tum React/Vite projects me bhi use kar sako.
-
-Chahoge mai wo bana doon?
+Agar chaho, mai ye notes **Vite / React static deployment ke liye bhi ready-to-use add kar doon**, taki same workflow tum React/Vite projects me bhi use kaS
