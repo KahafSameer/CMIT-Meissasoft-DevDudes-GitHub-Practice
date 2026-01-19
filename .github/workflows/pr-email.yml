@@ -1,0 +1,35 @@
+name: PR Email Notification
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Send PR Email
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: ${{ secrets.MAIL_SERVER }}
+        server_port: ${{ secrets.MAIL_PORT }}
+        username: ${{ secrets.MAIL_USERNAME }}
+        password: ${{ secrets.MAIL_PASSWORD }}
+
+        subject: "New Pull Request in ${{ github.repository }}"
+        to: ${{ secrets.MAIL_TO }}
+        from: GitHub Actions <${{ secrets.MAIL_USERNAME }}>
+
+        body: |
+          Hello 👋
+
+          A new Pull Request has been created.
+
+          Repository: ${{ github.repository }}
+          PR Title: ${{ github.event.pull_request.title }}
+          Author: ${{ github.event.pull_request.user.login }}
+          PR URL: ${{ github.event.pull_request.html_url }}
+
+          Regards,
+          GitHub Actions 🤖
