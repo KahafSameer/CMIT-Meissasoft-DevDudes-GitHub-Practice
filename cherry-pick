@@ -1,0 +1,114 @@
+Ahh got it, Kafi 😎 — tum **GitHub ka cherry-pick feature** ki notes chahte ho. Chalo main simple aur clear notes bana deta hoon, step by step.
+
+---
+
+# **Git Cherry-Pick Notes**
+
+### **1. Cherry-Pick kya hai?**
+
+* `git cherry-pick` ek **specific commit ko current branch me apply karne ka command** hai.
+* Matlab: agar kisi branch me ek commit hai jo tumhe doosri branch me chahiye, to **poori branch merge kiye bina** us commit ko le sakte ho.
+* **Example:**
+
+  * `feature` branch me ek fix commit hai.
+  * Tum `main` branch me ho.
+  * Cherry-pick se sirf woh fix `main` me aa jayega.
+
+---
+
+### **2. Basic Syntax**
+
+```bash
+git cherry-pick <commit-hash>
+```
+
+* `<commit-hash>` = wo commit ka unique ID jo tum le kar aana chahte ho.
+* Commit hash ko `git log` se find kar sakte ho.
+
+---
+
+### **3. Example**
+
+1. Current branch check karo:
+
+```bash
+git branch
+```
+
+2. `feature` branch me commit ID dekho:
+
+```bash
+git log
+```
+
+3. `main` branch me switch karo:
+
+```bash
+git checkout main
+```
+
+4. Cherry-pick command use karo:
+
+```bash
+git cherry-pick 3a2b1c
+```
+
+* Ye commit ab `main` branch me aa jayega.
+
+---
+
+### **4. Multiple Commits Cherry-Pick**
+
+```bash
+git cherry-pick <commit1> <commit2> <commit3>
+```
+
+* Ya range me bhi kar sakte ho:
+
+```bash
+git cherry-pick <start-commit-hash>^..<end-commit-hash>
+```
+
+---
+
+### **5. Conflicts Handle Karna**
+
+* Agar conflict aata hai to git bolega:
+
+```bash
+error: could not apply <commit>
+```
+
+* Steps:
+
+  1. Conflicted files edit karo.
+  2. Changes stage karo:
+
+  ```bash
+  git add <file>
+  ```
+
+  3. Continue cherry-pick:
+
+  ```bash
+  git cherry-pick --continue
+  ```
+* Agar cancel karna ho:
+
+```bash
+git cherry-pick --abort
+```
+
+---
+
+### **6. Important Notes**
+
+* Cherry-pick **history me duplicate commits create karta hai** (agar same commit pehle merge ho chuka ho to avoid karo).
+* Best use: **specific bug fix ya small feature** copy karne ke liye.
+* Avoid: Large branch copy ya full feature transfer ke liye — usme **merge ya rebase** zyada sahi hai.
+
+---
+
+Agar chaho, mai ye **ek simple diagram ke saath bhi bana du**, jisse **visualize karna aur yaad rakhna easy ho jaye**.
+
+Kya mai wo bana doon?
